@@ -5,7 +5,6 @@ from utils import load_model_and_scaler, preprocess_input
 # Page Configuration
 st.set_page_config(
     page_title="Hospital Readmission Prediction",
-    page_icon="🏥",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -18,7 +17,7 @@ def get_model_and_scaler():
 model, scaler = get_model_and_scaler()
 
 # Title and Introduction
-st.title("🏥 Hospital Readmission Prediction")
+st.title("Hospital Readmission Prediction")
 st.markdown("""
     This application predicts the likelihood of a patient being readmitted to the hospital within 30 days.
     Please enter the patient's clinical and demographic details below.
